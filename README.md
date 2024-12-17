@@ -1,7 +1,7 @@
 # ECE-424-2024
 Final Project by Sasha Gupta and Sahana Ranganathan
 
-Q1 insructions
+Q1 insructions:
 py Q1.py
 
 Q2 instructions:
