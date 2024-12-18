@@ -1,5 +1,6 @@
 import random
 
+#Part 4 encoding algorithm
 def encode(k, message_lengths, messages):
     #first 5 bits for the number of messages k
     encoded_message = format(k, '05b')
@@ -12,7 +13,7 @@ def encode(k, message_lengths, messages):
         encoded_message += messages[i]
     
     return encoded_message
-
+#Part 4 Decoding algorithm
 def decode(encoded_message):
     #first 5 bits for the number of messages k
     k = int(encoded_message[:5], 2)
@@ -30,7 +31,7 @@ def decode(encoded_message):
     
     return decoded_messages
 
-#Testing 
+#Testing - for part 5
 k = random.randint(1, 32) # randomly choosing number for k
 message_lengths = [random.randint(1, 5) for _ in range(k)]
 messages = [format(random.getrandbits(ni), f'0{ni}b') for ni in message_lengths]
