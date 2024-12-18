@@ -2,7 +2,7 @@ from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 from cryptography.hazmat.primitives import padding
 from cryptography.hazmat.backends import default_backend
 import os
-#CTR mode
+#CTR
 def encrypt_ctr(key, plaintext, nonce):
     cipher = Cipher(algorithms.AES(key), modes.CTR(nonce), backend=default_backend())
     encryptor = cipher.encryptor()
