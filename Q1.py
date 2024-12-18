@@ -39,6 +39,6 @@ messages = [format(random.getrandbits(ni), f'0{ni}b') for ni in message_lengths]
 encoded = encode(k, message_lengths, messages)
 decoded = decode(encoded)
 
-print(f"Original Messages: {messages}")
-print(f"Encoded: {encoded}")
-print(f"Decoded: {decoded}")
+print(f"Original Messages: {messages}") #printing original message
+print(f"Encoded message: {encoded}") #encoded
+print(f"Decoded message: {decoded}") #decoded
